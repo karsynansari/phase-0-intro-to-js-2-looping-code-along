@@ -15,23 +15,56 @@
 //   return int;
 // }
 
-function writeCards(guestName, event) {
-  let newArray = [];
-  for (let i = 0; i < guestName.length; i++) {
-    let greeting = `Thank you, ${guestName[i]}, for the wonderful ${event} gift!`;
+// function writeCards(guestName, event) {
+//   let newArray = [];
+//   for (let i = 0; i < guestName.length; i++) {
+//     let greeting = `Thank you, ${guestName[i]}, for the wonderful ${event} gift!`;
 
-    newArray.push(greeting);
-  }
-  return newArray;
+//     newArray.push(greeting);
+//   }
+//   return newArray;
+// }
+// writeCards(["Guadalupe", "Ollie", "Aki"], "surprise");
+
+// function countDown(int) {
+//   let i = 10;
+//   while (i >= 0) {
+//     console.log(i);
+//     i--;
+//   }
+//   return int;
+// }
+// countDown();
+
+for (let age = 30; age < 40; age++) {
+  console.log(`I'm ${age} years old. Happy birthday to me!`);
 }
-writeCards(["Guadalupe", "Ollie", "Aki"], "surprise");
+
+const gifts = ["teddy bear", "drone", "doll"];
+
+function wrapGifts(gifts) {
+  for (let i = 0; i < gifts.length; i++) {
+    console.log(`Wrapped ${gifts[i]} and added a bow!`);
+  }
+  return gifts;
+}
+wrapGifts(gifts);
+
+function writeCards(name, eventName) {
+  let cardsArray = [];
+  for (let i = 0; i < name.length; i++) {
+    let newArray = `Thank you, ${name[i]}, for the wonderful ${eventName} gift!`;
+    cardsArray.push(newArray);
+  }
+  return cardsArray;
+}
+
+writeCards();
 
 function countDown(int) {
-  let i = 10;
-  while (i >= 0) {
-    console.log(i);
-    i--;
+  let n = int;
+  while (n >= 0) {
+    console.log(n--);
   }
-  return int;
 }
-countDown();
+countDown(5);
